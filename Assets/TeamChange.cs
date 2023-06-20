@@ -8,7 +8,7 @@ public class TeamChange : MonoBehaviour
     public GameObject[] teamRed;
     [SerializeField]
     GameObject currentPlayer;
-    int currentTeam; // even - teamBlue, odd - teamRed
+    int currentTeam; // even - teamBlue, odd - teamRed TODO to pewnie jakimś enumem można zrobić ale mi się nie chciało, ostatecznie bool ale jeszcze gorzej się to czyta w kodzie
     int nextWormTeamBlue;
     int nextWormTeamRed;
     void Start()
@@ -16,12 +16,12 @@ public class TeamChange : MonoBehaviour
         nextWormTeamBlue = 0;
         nextWormTeamRed = 0;
         currentTeam = -1;
-        for(int i = 1; i < teamBlue.Length; i++)
+        for(int i = 0; i < teamBlue.Length; i++)
         {
             teamBlue[i].GetComponent<PlayerMovement>().enabled = false;
             teamBlue[i].GetComponent<FireWeapon>().enabled = false;
         }
-        for(int i = 1; i < teamRed.Length; i++)
+        for(int i = 0; i < teamRed.Length; i++)
         {
             teamRed[i].GetComponent<PlayerMovement>().enabled = false;
             teamRed[i].GetComponent<FireWeapon>().enabled = false;
