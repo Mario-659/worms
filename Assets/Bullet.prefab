@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrehab: {fileID: 1395125118075301818, guid: 738fb8a3311df51408b03fb9aaf2f5eb, type: 3}
-  life: 20
+  life: 3
   cameraControl: {fileID: 7230892371978213007, guid: cfb0897b70e108042ba6aa191960b997, type: 3}
 --- !u!50 &2510694540258689154
 Rigidbody2D:
